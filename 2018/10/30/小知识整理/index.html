@@ -58,6 +58,15 @@
 <h1 id="3-贝塞尔曲线"><a href="#3-贝塞尔曲线" class="headerlink" title="3.贝塞尔曲线"></a>3.贝塞尔曲线</h1><ul>
 <li>1.该方法将会创建一个闭合路径, 起始点是 rect 参数的的 origin, 并且按照顺时针方向添加直线, 最终形成矩形 * @param rect: 矩形路径的 Frame<br>通过一个矩形, 创建并且返回一个新的 UIBezierPath 对象<br><code>+ (instancetype)bezierPathWithRect:(CGRect)rect;</code></li>
 </ul>
+<h1 id="4-学习总结"><a href="#4-学习总结" class="headerlink" title="4.学习总结"></a>4.学习总结</h1><ul>
+<li>1.数组名不是常量指针，更不是指向数组首地址的常量指针</li>
+</ul>
+<p>C语言中把字符串当做字符数组来处理，当遇到长度n的字符串时，程序分配长度n+1的数组来保存，<br>\0表示字符串的结束</p>
+<p>字符串不能对数组名称直接赋值#include&lt;string.h&gt;, strcpy(x,”aa”)进行赋值</p>
+<p>struct结构体可以保存多个类型 .访问结构体成员 结构可以通过等号进行复制<br>结构体的类型定义 typedef struct{}x;   </p>
+<p>union联合同一时间只能有一个 彼此覆盖 节省内存空间 只给最大的成员分配足够的空间</p>
+<p>宏定义在编译器期间被删除 调试不方便</p>
+<p>Enum枚举作为整数 默认从0 开始一次递增1<br>如果一个变量你需要几种可能存在的值，那么就可以被定义成为枚举类型。<br>之所以叫枚举就是说将变量或者叫对象可能存在的情况也可以说是可能的值一一例举出来。</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
