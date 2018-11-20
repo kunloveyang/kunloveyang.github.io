@@ -76,6 +76,10 @@
 <p>Id类型可以表示任何类型 可以将任何对象赋值给id类型<br>instancetype实例类型只能在方法生命中作为返回类型使用  </p>
 <p>int r = arc4random();获得随机数 </p>
 <p>break跳出循环 continue继续</p>
+<ul>
+<li>3.创建类<br>@interface ClassName : SuperClass<protocol>{<br>接口         类名    ：继承关系     父类         协议<br>实例变量的声明<br>实例变量起名都要加_下划线<br>}<br>方法的声明 -(void)；先声明出有哪些功能<br>@end<br>声明静态方法+()  实例方法需要创建实例才能调用 静态方法直接调用<br>NSObject  OC里的顶级父类<br>@implementation 实现类<br>[[alloc]init]和[new]结果相同<br>Alloc 分配内存<br>init    初始化<br>self   类本身<br>[]方法的调用 静态方法通过类名称直接调用<br>静态变量写在实现部分 静态变量是所有对象共享的</protocol></li>
+</ul>
+<p>实例方法-(类型)开头<br>-(返回值)方法名称:(参数类型)参数名称;<br>继承关系  是一个  is a<br>组合关系  有一个  has a<br>Oc单根继承</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
